@@ -6,8 +6,8 @@
 <xacro:property name="baselw" value="1"/>
 <xacro:property name="baseh" value="0.25"/>
 
-<xacro:include filename="$(find robolab_mini_project)/src/urdf/materials.xacro" />
-<xacro:include filename="$(find robolab_mini_project)/src/urdf/macros.xacro" />
+<xacro:include filename="$(find robolab_mini_project)/urdf/materials.xacro" />
+<xacro:include filename="$(find robolab_mini_project)/urdf/macros.xacro" />
 
   <link name="base_link">
   <pose>0 0 3 0 0 0</pose>
@@ -41,6 +41,6 @@
   <xacro:joint_link joint_name="right_joint_1" child="right_wheel_1" origin_xyz="0.25 -0.55 0.025"/>
   <xacro:joint_link joint_name="right_joint_2" child="right_wheel_2" origin_xyz="-0.25 -0.55 0.025"/>
   <xacro:joint_link joint_name="left_joint_1" child="left_wheel_1" origin_xyz="0.25 0.55 0.025"/>
-  <xacro:joint_link joint_name="left_joint_2" child="left_wheel_2" origin_xyz="-0.25 -0.55 0.025"/>
+  <xacro:joint_link joint_name="left_joint_2" child="left_wheel_2" origin_xyz="-0.25 0.55 0.025"/>
 
 </robot>

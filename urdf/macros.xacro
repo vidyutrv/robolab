@@ -2,8 +2,6 @@
 
 <robot name="four_wheel_bot" xmlns:xacro = "https://www.ros.org/wiki/xacro">
 
-  <!-- <xacro:include filename="$(find robolab_mini_project)/src/urdf/materials.xacro" /> -->
-
     <xacro:macro name='wheel_link' params='link_name'>
         <link name="${link_name}">
             <inertial>
@@ -34,11 +32,9 @@
     <xacro:macro name='joint_link' params='joint_name child origin_xyz'>
         <joint name="${joint_name}" type="continuous">
             <origin xyz="${origin_xyz}" rpy="0 0 0"/>
-            <parent link="chassis"/>
+            <parent link="base_link"/>
             <child link="${child}"/>
             <axis xyz="0 1 0"/>
-            <limit effort="1000" velocity="1000"/>
-            <joint_properties damping="1.0" friction="1.0"/>
         </joint>
     </xacro:macro>
 

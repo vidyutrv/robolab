@@ -6,9 +6,9 @@
 <xacro:property name="baselw" value="1"/>
 <xacro:property name="baseh" value="0.25"/>
 
-<xacro:include filename="$(find robolab_mini_project)/src/urdf/materials.xacro" />
-<xacro:include filename="$(find robolab_mini_project)/src/urdf/macros.xacro" />
-<xacro:include filename="$(find robolab_mini_project)/src/urdf/four_wheel_bot.gazebo"/>
+<xacro:include filename="$(find robolab_mini_project)/urdf/materials.xacro" />
+<xacro:include filename="$(find robolab_mini_project)/urdf/macros.xacro" />
+<xacro:include filename="$(find robolab_mini_project)/urdf/four_wheel_bot.gazebo"/>
 
   <link name="base_link">
   <pose>0 0 3 0 0 0</pose>
